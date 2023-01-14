@@ -11,26 +11,23 @@
 ## 项目结构
 
 ```
-NCHU_Bachelor_Proposal_Report_Template
+NCHU_Bachelor_Mission_Statement_Template
 ├─ .gitignore
 ├─ images
 │  ├─ header.png
 │  └─ nchu_logo.png
 ├─ LICENSE
-├─ main.pdf
-├─ main.tex
 ├─ misc
 │  ├─ 0_cover.tex
-│  ├─ 1_instruction.tex
-│  ├─ 2_reference.tex
-│  ├─ 3_tutor_comments.tex
-│  └─ ref.bib
+│  └─ 1_info.tex
+├─ mission.pdf
+├─ mission.tex
 ├─ README.md
 ├─ sections
-   ├─ 1_rationale_significance.tex
-   ├─ 2_overview_trend.tex
-   ├─ 3_research_content.tex
-   └─ 4_objectives.tex
+│  ├─ 1_title.tex
+│  ├─ 2_origin_data.tex
+│  ├─ 3_work_schedule.tex
+│  └─ 4_reference.tex
 ├─ SimHei.ttf
 ├─ SimKai.ttf
 └─ SimSun.ttc

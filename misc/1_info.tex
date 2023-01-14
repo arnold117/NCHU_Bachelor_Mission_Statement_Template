@@ -1,7 +1,7 @@
 %%
-% NCHU Bachelor Proposal Report Template
+% NCHU Bachelor Mission Statement Template
 %
-% 南昌航空大学毕业设计开题报告（指导老师意见）—— 使用 XeLaTeX 编译
+% 南昌航空大学毕业设计任务书 —— 使用 XeLaTeX 编译
 %
 % Copyright 2023 Arnold Chow
 %
@@ -9,10 +9,67 @@
 %
 % Compile with: xelatex -> biber -> xelatex -> xelatex
 
+
 % 添加个人信息
-\newcommand{\deptName}{测试与光电工程学院}
+\newcommand{\deptName}{测试与光电工程}
 \newcommand{\majorName}{生物医学工程}
 \newcommand{\class}{190841}
+% 开始日期
+\newcommand{\startYear}{2023}
+\newcommand{\startMonth}{01}
+\newcommand{\startDay}{01}
+% 结束日期
+\newcommand{\overYear}{2023}
+\newcommand{\overMonth}{06}
+\newcommand{\overDay}{30}
 
 \vspace*{4ex}
 
+\setlength{\parindent}{0pt} 
+
+\selectfont{\dunderline[-5pt]{0.4pt}{\makebox[48mm][c]{\deptName}}}
+\textbf{学院}
+\selectfont{\dunderline[-5pt]{0.4pt}{\makebox[48mm][c]{\majorName}}}
+\textbf{专业类}
+\selectfont{\dunderline[-5pt]{0.4pt}{\makebox[32mm][c]{\class}}}
+\textbf{班}
+
+\vspace*{4ex}
+
+\textbf{学生 (签名):}
+
+\vspace*{4ex}
+
+\textbf{日期：} \hspace{26mm} \textbf{自}
+\selectfont{\dunderline[-5pt]{0.4pt}{\makebox[16mm][c]{\startYear}}}
+\textbf{年}
+\selectfont{\dunderline[-5pt]{0.4pt}{\makebox[8mm][c]{\startMonth}}}
+\textbf{月}
+\selectfont{\dunderline[-5pt]{0.4pt}{\makebox[8mm][c]{\startDay}}}
+\textbf{日起至}
+\selectfont{\dunderline[-5pt]{0.4pt}{\makebox[16mm][c]{\overYear}}}
+\textbf{年}
+\selectfont{\dunderline[-5pt]{0.4pt}{\makebox[8mm][c]{\overMonth}}}
+\textbf{月}
+\selectfont{\dunderline[-5pt]{0.4pt}{\makebox[8mm][c]{\overDay}}}
+\textbf{日}
+
+\vspace*{4ex}
+
+\textbf{指导教师 (签名):}
+
+\vspace*{4ex}
+
+\textbf{助理指导教师 (并指出负责的部分):}
+
+\vspace*{4ex}
+
+\rightline{
+\selectfont{\dunderline[-5pt]{0.4pt}{\makebox[48mm][c]{\majorName}}}
+\textbf{系 (部) 主任 (签名):}
+\selectfont{\dunderline[-5pt]{0.4pt}{\makebox[48mm][c]{ }}}
+}
+
+\vspace*{4ex}
+
+\textbf{附注:任务书应该附在已完成的毕业设计说明书首页。}
