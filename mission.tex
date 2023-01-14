@@ -1,5 +1,5 @@
 %%
-% NCHU Bachelor Proposal Report Template
+% NCHU Bachelor Mission Statement Template
 %
 % 南昌航空大学毕业设计任务书 —— 使用 XeLaTeX 编译
 %
@@ -37,23 +37,8 @@
 \usepackage[section]{placeins}
 \usepackage{enumerate}
 \usepackage{ulem}
-
-% 设置参考文献编译后端为 biber，引用格式为 GB/T7714-2015 格式
-% 参考文献使用宏包见 https://github.com/hushidong/biblatex-gb7714-2015
-\usepackage[
-  backend=biber,
-  style=gb7714-2015,
-  gbalign=gb7714-2015,
-  gbnamefmt=lowercase,
-  gbpub=false,
-  doi=false,
-  url=false,
-  eprint=false,
-  isbn=false,
-]{biblatex}
-
-% 参考文献引用文件位于 misc/ref.bib
-\addbibresource{misc/ref.bib}
+\usepackage{adjustbox}
+\usepackage{tabularx}
 
 % 西文字体默认为 Times New Roman
 \setromanfont{Times New Roman}
@@ -89,9 +74,20 @@
   }
 }
 
-% 设置目录样式
-% 添加 PDF 链接
-\addtocontents{toc}{\protect\hypersetup{hidelinks}}
+\newlength\myheight
+\newcommand\Mysavedprevdepth{}%
+\newcommand\AllUnderline[3]{%
+  \begin{adjustbox}{minipage=[t]{\dimexpr#1\relax},gstore totalheight=\myheight,margin=0pt}%
+    \leavevmode#3\par\xdef\Mysavedprevdepth{\the\prevdepth}%
+  \end{adjustbox}%
+  \hspace*{-\dimexpr#1\relax}%
+  \begin{adjustbox}{minipage=[t][\myheight]{\dimexpr#1\relax},margin=0pt}%
+    \vphantom{Eg}\lower\dimexpr#2\relax\hbox to\hsize{\leaders\hrule\hfill\kern0pt}\par
+    \kern-\dimexpr#2\relax
+    \xleaders\vbox to\baselineskip {\vfill\hbox{\lower\dimexpr#2\relax\hbox to\hsize{\leaders\hrule\hfill\kern0pt}}\kern-\dimexpr#2\relax}\vfill
+    \kern\Mysavedprevdepth
+  \end{adjustbox}%
+}%
 
 % 修改超链接、引用的颜色
 \hypersetup{
