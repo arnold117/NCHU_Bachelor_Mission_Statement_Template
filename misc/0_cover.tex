@@ -1,0 +1,31 @@
+%%
+% NCHU Bachelor Proposal Report Template
+%
+% 南昌航空大学毕业设计任务书 (封面页) —— 使用 XeLaTeX 编译
+%
+% Copyright 2023 Arnold Chow
+%
+% The Current Maintainer of this work is Arnold Chow.
+%
+% 封面
+%
+% 如无特殊需要，本页面无需更改
+
+% Underline new command for student information
+% Usage: \dunderline[<offset>]{<line_thickness>}
+\newcommand\dunderline[3][-1pt]{{%
+  \setbox0=\hbox{#3}
+  \ooalign{\copy0\cr\rule[\dimexpr#1-#2\relax]{\wd0}{#2}}}}
+
+
+\makeatletter
+\vspace*{-18mm}
+\begin{center}
+    \includegraphics[width=8cm]{images/header.png}
+\vspace*{-6mm}
+
+\zihao{1}\textbf{\songti{毕业设计（论文）任务书}}
+\end{center}
+
+
+\zihao{-4}\kaishu
